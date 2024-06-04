@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video editor-portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
+
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/nav.css">
+    <link rel="stylesheet" href="/style/review.css">
+    <link rel="stylesheet" href="/style/work.css">
+    <link rel="stylesheet" href="/style/service.css">
+    <link rel="stylesheet" href="/style/media.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/top-vid.css">
+    <link rel="stylesheet" href="/style/clint.css">
+    <link rel="stylesheet" href="/style/project-counter.css">
+    <link rel="stylesheet" href="/style/about.css">
+
+</head>
+
+<body>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <!-- nav -->
+    <nav>
+        <div class="logo">
+            <img src="/public/Scale_Social_MK__logo.png" alt="Logo Image">
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#homem" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#aboutm" onclick="toggleMenu()">About Us</a></li>
+            <li><a href="#reviewm" onclick="toggleMenu()">Reviews</a></li>
+            <li><a href="#servicem" onclick="toggleMenu()">Services</a></li>
+            <li><a href="#contactm" onclick="toggleMenu()">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- first-vid -->
+        <h1 style="display: none;">video management</h1>
+        <div class="top-vid-1">
+            <video src="/public/top-vid.mp4" muted autoplay loop palys-inline id="top-vid-1">
+            </video>
+        </div>
+        <div class="top-vid-2">
+            <video src="/public/top-vid.mp4" muted autoplay loop palys-inline id="top-vid-2">
+            </video>
+        </div>
+        <!-- clints -->
+        <div id="homem" class="clint center">
+            <div class="h">
+                <h2>Meet our valued clients, who trust us to provide exceptional service.</h2>
+            </div>
+            <!--Slider-->
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel center">
+                    <li class="card" style="height: 70%;">
+                        <img src="/public/chrish william.jpeg" class="img" srcset=""
+                            style="border-radius: 50%; width: 40%; height: 55%; z-index: -20;">
+                        <a href="https://instagram.com/chriswillx?igshid=NGVhN2U2NjQ0Yg==" target="_blank"
+                            rel="noopener noreferrer">
+                            <div style="font-size: larger; font-weight: 400;">Chris Williams</div>
+                        </a>
+                    </li>
+                    <li class="card" style="height: 70%;">
+                        <img src="/public/natt.jpeg" class="img" srcset=""
+                            style="border-radius: 50%; width: 35%; height: 60%; z-index: -20;">
+                        <a href="https://www.instagram.com/natt.jongsala/" target="_blank">
+                            <div style="font-size: larger; font-weight: 400;">Natt Jongsala</div>
+                        </a>
+                    </li>
+                    <li class="card" style="height: 70%;">
+                        <img src="/public/toozer.jpeg" class="img" srcset=""
+                            style="border-radius: 50%; width: 40%; height: 57%; z-index: -20;">
+                        <a href="https://instagram.com/toozer?igshid=NGVhN2U2NjQ0Yg==" target="_blank"></a>
+                        <div style="font-size: larger; font-weight: 400;">Toozer</div></a>
+                    </li>
+                    <li class="card" style="height: 70%;">
+                        <img src="/public/bigbrain.jpeg" class="img" srcset=""
+                            style=" width: 70%; height: 50%; z-index: -20;">
+                        <div style="font-size: larger; font-weight: 400;">Big Brain</div>
+                    </li>
+                    <li class="card" style="height: 70%;">
+                        <img src="/public/vidhaan.jpeg" class="img" srcset=""
+                            style="border-radius: 50%; width: 40%; height: 55%; z-index: -20;">
+                        <a href="https://instagram.com/wiserwithvidhaan?igshid=NGVhN2U2NjQ0Yg==" target="_blank"
+                            rel="noopener noreferrer">
+                            <div style="font-size: larger; font-weight: 400;">Vidhaan Jain</div>
+                        </a>
+                    </li>
+                    <li class="card" style="height: 70%;">
+                        <img src="/public/ranveer.jpg" class="img" srcset=""
+                            style="border-radius: 50%; width: 40%; height: 60%; z-index: -20;">
+                        <div style="font-size: larger; font-weight: 400;">Ranveer Allahbadia</div>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+        <!-- project-counter -->
+        <div class="project-counter center">
+            <img src="/public/counter-img.jpg" id="counter-img" alt="" srcset="">
+            <div class="h" style="width: 80%; margin-bottom: 15px;">
+                <h2>Crafting compelling stories, one frame at a time</h2>
+            </div>
+            <div class="counter center" style="width: 70%; height: 50%;">
+                <div class="counter-1">
+                    <h3 style="margin-bottom: 10px;">PROJECTS</h3>
+                    <p class="cp" style="color: #43dfea; font-size: 60px;"><span class="counter-c" data-count-start="00"
+                            data-count-end="300" data-speed="20"
+                            style="border: none; font-size: 60px; color: #43dfea;"></span>+</p>
+                </div>
+                <div class="counter-2">
+                    <h3 style="margin-bottom: 10px;">COUNTRIES</h3>
+                    <p class="cp" style="color: #43dfea; font-size: 60px;"><span class="counter-c" data-count-start="00"
+                            data-count-end="50" data-speed="70"
+                            style="border: none; font-size: 60px; color: #43dfea;"></span>+</p>
+                </div>
+            </div>
+        </div>
+        <!-- about -->
+        <div class="about" id="aboutm">
+            <div class="blue-colr"></div>
+            <div class="about-1 center">
+                <div class="left-1">
+                    <div style="font-size: 1.3rem; color: #43dfea; text-align: left; width: 100%; margin-left: 20px;">
+                        WHO WE ARE..</div>
+                    <div>
+                        <h2 style="font-size: 2.4rem; font-weight: 800;">Your Go-To for Exceptional Video Management.
+                        </h2>
+                    </div>
+                    <div style="width: 80%; margin-right: 15%;">We help bring our client’s Visions to Reality. We have
+                        worked on 400+ projects and clients from 50 different countries.
+                    </div>
+                </div>
+            </div>
+            <div class="right-1">
+                <div class="vid-a center">
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/DtcVmCQa-Dw?si=_mAEhGB-zCdPt-g1&amp;controls=0&amp;start=3"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="cam-a">
+                    <img src="/public/about-img-1.jpg" alt="" srcset="" width="80%">
+                </div>
+            </div>
+        </div>
+        <!-- about-team -->
+        <div class="about-team center">
+            <div class="wrapper-w" style="height: 95%; width: 100%;">
+                <i id="left-w" class="fa-solid fa-angle-left" style="color:rgb(86, 40, 86) ;font-size: 50px;"></i>
+                <ul class="carousel-w center" style="height: 100%; width: 100%;">
+                    <li class="card-w"
+                        style="height: 60%;background: linear-gradient(0deg, rgba(12,164,166,1) 0%, rgba(85,191,193,1) 1%, rgba(157,218,219,1) 3%, rgba(222,243,243,1) 19%, rgba(255,255,255,0) 30%); border-color: aliceblue; border-style: solid;">
+                        <img src="/public/Shivathmaj.JPG" alt="" width="90%" style="z-index: -1;"><span
+                            style="font-size: larger; color: black; font-weight: 500;">Mr. Shivathmaj <br>Founder &
+                            CEO</span></img>
+                    </li>
+                    <li class="card-w"
+                        style="height: 60%;background: linear-gradient(0deg, rgba(12,164,166,1) 0%, rgba(85,191,193,1) 1%, rgba(157,218,219,1) 3%, rgba(222,243,243,1) 19%, rgba(255,255,255,0) 30%); border-color: aliceblue; border-style: solid;">
+                        <img src="/public/muskan.jpeg" alt="" width="90%" style="z-index: -1;"><span
+                            style="font-size: larger; color: black; font-weight: 500;">Miss. Roshni<br>Lead's UGC</span>
+                    </li>
+                    <li class="card-w"
+                        style="height: 60%;background: linear-gradient(0deg, rgba(12,164,166,1) 0%, rgba(85,191,193,1) 1%, rgba(157,218,219,1) 3%, rgba(222,243,243,1) 19%, rgba(255,255,255,0) 30%); border-color: aliceblue; border-style: solid;">
+                        <img src="/public/roshani.png" alt="" width="90%" style="z-index: -1;"><span
+                            style="font-size: larger; color: black; font-weight: 500;">Miss. Muskaan<br>Lead's Social
+                            Media Management</span>
+                    </li>
+                    <li class="card-w"
+                        style="height: 60%;background: linear-gradient(0deg, rgba(12,164,166,1) 0%, rgba(85,191,193,1) 1%, rgba(157,218,219,1) 3%, rgba(222,243,243,1) 19%, rgba(255,255,255,0) 30%); border-color: aliceblue; border-style: solid;">
+                        <img src="/public/v.jpeg" alt="" width="90%" style="z-index: -1;"><span
+                            style="font-size: larger; color: black; font-weight: 500;">Mr. Varad<br>Client Success
+                            Manager</span>
+                    </li>
+                    <li class="card-w"
+                        style="height: 60%;background: linear-gradient(0deg, rgba(12,164,166,1) 0%, rgba(85,191,193,1) 1%, rgba(157,218,219,1) 3%, rgba(222,243,243,1) 19%, rgba(255,255,255,0) 30%); border-color: aliceblue; border-style: solid;">
+                        <img src="/public/Devi Prasad.jpg" alt="" width="90%" style="z-index: -1;"><span
+                            style="font-size: larger; color: black; font-weight: 500;">Mr.
+                            DeviPrasad<br>Co-Founder</span>
+                    </li>
+                </ul>
+                <i id="right-w" class="fa-solid fa-angle-right" style="color:rgb(84, 52, 84); font-size: 50px;"></i>
+            </div>
+        </div>
+
+        </div>
+        <div class="center" style="width: 100%;height: 45vh; flex-direction: column;">
+            <div style="font-size: 1.3rem; color: #43dfea; text-align: center; width: 100%; margin-left: 20px;">WHAT WE
+                OFFER.</div>
+            <div>
+                <h2 class="h22" style="font-size: 2rem; font-weight: 800; text-align: center;">Elevate your project
+                    with tailored video editing, including script and content writing. Contact us for personalized,
+                    professional results on time.
+                </h2>
+            </div>
+        </div>
+        <!-- work -->
+        <div class="work center">
+            <div class="wrapper-w" style="height: 95%; width: 100%;">
+                <i id="left-w" class="fa-solid fa-angle-left" style="color:rgb(86, 40, 86) ;font-size: 50px;"></i>
+                <ul class="carousel-w" style="height: 100%; width: 100%;">
+                    <li class="card-w" style="height: 100%;">
+                        <video src="/public/vid2.mp4" autoplay loop muted
+                            style="width: 100%; height: 90%;border-radius: 10px; z-index: -40; filter: blur(1px); "></video>
+                        <span style="margin-bottom: 10px;">Social Media Videos Management</span>
+                    </li>
+                    <li class="card-w" style="height: 100%;">
+                        <video src="/public/vid1.mp4" autoplay loop muted
+                            style="width: 100%; height: 90%;border-radius: 10px; z-index: -40; filter: blur(1px); "></video>
+                        <span style="margin-bottom: 10px;">Youtube Videos</span>
+                    </li>
+                    <li class="card-w" style="height: 100%;">
+                        <video src="/public/vid3.mp4" autoplay loop muted
+                            style="width: 100%; height: 90%;border-radius: 10px; z-index: -40; filter: blur(1px); "></video>
+                        <span>Commercials</span>
+                    </li>
+                    <li class="card-w" style="height: 100%;">
+                        <video src="/public/vid4.mp4" autoplay loop muted
+                            style="width: 100%; height: 90%;border-radius: 10px; z-index: -40; filter: blur(1px); "></video>
+                        <span>Reel Videos</span>
+                    </li>
+                    <li class="card-w" style="height: 100%;">
+                        <video src="/public/vid5.mp4" autoplay loop muted
+                            style="width: 100%; height: 90%;border-radius: 10px; z-index: -40; filter: blur(1px); "></video>
+                        <span>Travel Vlogs</span>
+                    </li>
+                    <li class="card-w" style="height: 100%;">
+                        <video src="/public/vid6.mp4" autoplay loop muted
+                            style="width: 100%; height: 90%;border-radius: 10px; z-index: -40; filter: blur(1px); "></video>
+                        <span>Content Writting</span>
+                    </li>
+                    <li class="card-w" style="height: 100%;">
+                        <video src="/public/vid7.mp4" autoplay loop muted
+                            style="width: 100%; height: 90%;border-radius: 10px; z-index: -40; filter: blur(1px); "></video>
+                        <span>Corporate Videos</span>
+                    </li>
+                    <li class="card-w" style="height: 100%;">
+                        <video src="/public/vid8.mp4" autoplay loop muted
+                            style="width: 100%; height: 90%;border-radius: 10px; z-index: -40; filter: blur(1px); "></video>
+                        <span>music Videos</span>
+                    </li>
+                    <li class="card-w" style="height: 100%;">
+                        <video src="/public/vid9.mp4" autoplay loop muted
+                            style="width: 100%; height: 90%;border-radius: 10px; z-index: -40; filter: blur(1px); "></video>
+                        <span>web Design</span>
+                    </li>
+                </ul>
+                <i id="right-w" class="fa-solid fa-angle-right" style="color:rgb(84, 52, 84); font-size: 50px;"></i>
+            </div>
+        </div>
+        <!-- services -->
+        <div class="service" id="servicem">
+            <div class="blue-colr"></div>
+            <div class="service-1">
+                <div class="center" style="color: #43dfea; font-size: large;">WHY CHOOSE US</div>
+                <div>
+                    <h2 class="h22" style="font-size: 2rem; font-weight: 800; text-align: center;">We make your business
+                        look good.
+                    </h2>
+                </div>
+            </div>
+            <div class="service-2 center">
+                <div style="height: 95%; width: 90%;">
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <h2 class="h2s" style="margin-bottom: 9px; color: #43dfea;"><i
+                                    class="fa-solid fa-ranking-star fa-xl" style="color:#43dfea; margin: 7px;"></i>
+                                Content Creation and Enhancement:</h2>
+                            <p class="ps" style="color: rgba(240, 248, 255, 0.775);">Craft compelling content with
+                                our:<br>
+                                Scriptwriting expertise,Video Editing finesse,Eye-catching Post Designs</p>
+                        </div>
+                        <div class="grid-item">
+                            <h2 class="h2s" style="margin-bottom: 9px; color: #43dfea; font-size: large;"><i
+                                    class="fa-solid fa-bars-progress" style="color:#43dfea ;margin: 7px;"></i>Posting
+                                and Scheduling:</h2>
+                            <p class="ps" style="color: rgba(240, 248, 255, 0.775); font-size: small;">Effortless
+                                updates and timely posts with: <br>
+                                Scheduled Planning,
+                                Consistent Timely Updates,
+                                Hassle-free Content Publishing</p>
+                        </div>
+                        <div class="grid-item">
+                            <h2 class="h2s" style="margin-bottom: 9px; color: #43dfea; font-size: large;"><i
+                                    class="fa-solid fa-city" style="color:#43dfea; margin: 7px;"></i>Marketing and
+                                Engagement:</h2>
+                            <p class="ps" style="color: rgba(240, 248, 255, 0.775); font-size: small;">Connect better
+                                with your audience through:<br>
+                                In-depth Audience Research,
+                                Tailored Marketing Strategies,
+                                Engaging Community Interaction</p>
+                        </div>
+                        <div class="grid-item">
+                            <h2 class="h2s" style="margin-bottom: 9px; color: #43dfea;"><i class="fa-solid fa-trophy"
+                                    style="color: #43dfea; margin: 7px;"></i>Platform Management:</h2>
+                            <p class="ps" style="color: rgba(240, 248, 255, 0.775);">Smoothly handle your presence
+                                on:<br>
+                                YouTube,
+                                LinkedIn,
+                                Twitter,
+                                Instagram</p>
+                        </div>
+                        <div class="grid-item">
+                            <h2 class="h2s" style="margin-bottom: 9px; color: #43dfea;"><i
+                                    class="fa-solid fa-magnifying-glass"
+                                    style="color: #43dfea; margin: 7px;"></i>Analytics and Optimization:</h2>
+                            <p class="ps" style="color: rgba(240, 248, 255, 0.775);">Understand and grow with: <br>
+                                Performance Analysis,
+                                Clear Monitoring and Reporting,
+                                Smart Strategy Refinement</p>
+                            <h2 class="h2s" style="margin-bottom: 9px; color: #43dfea; margin-top: 40px;"><i
+                                    class="fa-brands fa-superpowers" style="color: #43dfea; margin: 7px;"></i>End-to-End
+                                Service:
+                            </h2>
+                            <p class="ps" style="color: rgba(240, 248, 255, 0.775);">Let us handle it all, from:<br>
+                                Crafting your Social Media Strategy,
+                                Managing Holistic Campaigns,
+                                Continuously Improving Your Presence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- review -->
+        <div class="review" id="reviewm">
+            <div class="cards">
+                <div class="card center" style="display: block !important;">
+                    <img src="/public/rew-1.jpeg" alt="" srcset="" width="100%">
+                </div>
+                <div class="card center" style="display: block !important;">
+                    <img src="/public/rew-2.jpeg" alt="" srcset="" width="100%">
+                </div>
+                <div class="card center" style="display: block !important;">
+                    <img src="/public/rew-3.jpeg" alt="" srcset="" width="100%">
+                </div>
+                <div class="card center">
+                    <img src="/public/rew-4.jpeg" alt="" srcset="" width="100%">
+                </div>
+                <div class="card center">
+                    <img src="/public/rew-5.jpeg" alt="" srcset="" width="100%">
+                </div>
+                <div class="card center">
+                    <img src="/public/rew-6.jpeg" alt="" srcset="" width="100%">
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <!-- footer -->
+    <div class="footer">
+        <img src="/public/footor-top.jpg" alt=""
+            style="z-index: -10; position: absolute; width: 100%; height: 80%; filter: blur(20px);">
+
+        <img src="/public/footor-mid.jpg" alt=""
+            style="z-index: -11; position: absolute; width: 100%; height: 70%; margin-top: 500px;filter: blur(2px);">
+
+        <img src="/public/footor-bottom.jpg" alt=""
+            style="z-index: -9; position: absolute; width: 100%; height: 65%; margin-top: 820px;filter: blur(10px);">
+        <div class="contact center">
+            <div class="book center">
+                <div class="book-1">
+                    <div style="color: #43dfea; font-size: 1.6rem;">BOOK A CONSULTATION</div>
+                    <div style="font-size: 3rem;">Schedule An Appointment</div>
+                    <div>Scheduling a consultation with ScaleSocial involves Securing a dedicated time slot to discuss
+                        your video management needs and explore how we can bring your vision to life.</div>
+                </div>
+            </div>
+            <div class="container" id="contactm">
+                <form onsubmit="">
+                    <div class="row100">
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" id="name" name="" required="required">
+                                <span class="text">First Name</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" id="company" name="" required="required">
+                                <span class="text">Company</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="email" id="email" name="" required="required">
+                                <span class="text">Email</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="number" id="mobile" name="" required="required">
+                                <span class="text">Mobile</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="col">
+                            <div class="inputBox textarea">
+                                <textarea required="required" id="message"></textarea>
+                                <span class="text">Note...</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="col">
+                            <button type="submit">BOOK !</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="populated center">
+            <div class="populated-1 center">
+                <div class="follow-link center">
+                    <ul class="nav-links">
+                        <li><a href="#homem" onclick="toggleMenu()">Home</a></li>
+                        <li><a href="#aboutm" onclick="toggleMenu()">About Us</a></li>
+                        <li><a href="#reviewm" onclick="toggleMenu()">Reviews</a></li>
+                        <li><a href="#servicem" onclick="toggleMenu()">Services</a></li>
+                        <li><a href="#contactm" onclick="toggleMenu()">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="spacing"></div>
+                <div class="contact-link">
+                    <div class="yt center">
+                        <ul class="nav-links-1" style="width: 100%;">
+                            <li>
+                                <a href="https://www.youtube.com/@videoeditorshiva" target="_blank">
+                                    <i class="fa-brands fa-youtube fa-2xl" style="color: #e60a0a;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/scale.socials/reels/" target="_blank"><i
+                                        class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/shivathmaj/?profileId=ACoAAC0be5cBIjCYDtOfvk6uRRougV5zg3ldLtU"
+                                    target="_blank">
+                                    <i class="fa-brands fa-linkedin-in fa-2xl" style="color: #0054e6;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/+918618539214" target="_blank">
+                                    <i class="fa-brands fa-whatsapp fa-2xl" style="color: #46c878;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:shivathmaj@scalesocials.com" target="_blank">
+                                    <i class="fa-solid fa-at fa-2xl" style="color: #ff0000;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo center">
+                        <img src="/public/Scale Social-02.png" alt="">
+                    </div>
+                    <div class="copyright center">Copyright © 2023 HKRM, All rights reserved. . </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/nav.js"></script>
+    <script src="/js/clint.js"></script>
+    <script src="/js/counter.js"></script>
+    <script src="/js/work.js"></script>
+    <script src="/js/preloader.js"></script>
+
+</body>
+
+</html>

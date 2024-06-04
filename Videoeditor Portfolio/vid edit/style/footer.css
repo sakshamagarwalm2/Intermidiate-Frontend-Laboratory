@@ -1,0 +1,208 @@
+.contact {
+    flex-direction: column;
+    z-index: 10;
+}
+
+.book {
+    width: 100%;
+    height: 55vh;
+    overflow-x: hidden;
+}
+
+.book-1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    overflow-x: hidden;
+    width: 60%;
+    padding: 20px;
+    background-color: rgba(251, 247, 247, 0.899)fff;
+}
+
+.container .row100 {
+    width: 100%;
+    display: grid;
+    row-gap: 2px;
+    column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    overflow-x: hidden;
+}
+
+.container .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+    overflow-x: hidden;
+}
+
+.container .row100 .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: rgb(228, 196, 196);
+}
+
+.container .row100 .inputBox input,
+.container .row100 .inputBox.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+}
+
+.container .row100 .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus+.text,
+.container .row100 .inputBox input:valid+.text {
+    top: -35px;
+    left: -10px;
+}
+
+.container .row100 .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ffffff7e;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus~.line,
+.container .row100 .inputBox input:valid~.line {
+    height: 100%;
+}
+
+.container .row100 .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.container .row100 .inputBox.textarea textarea {
+    height: 100%;
+    resize: none;
+}
+
+.container .row100 .inputBox textarea:focus+.text,
+.container .row100 .inputBox textarea:valid+.text {
+    top: -35px;
+    left: -10px;
+}
+
+.container .row100 .inputBox textarea:focus~.line,
+.container .row100 .inputBox textarea:valid~.line {
+    height: 100%;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #fcfcfc79;
+    color: #000;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    font-size: larger;
+    font-weight: 800;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #43dfea;
+}
+
+.populated {
+    z-index: 10;
+    height: 65vh;
+    overflow-x: hidden;
+}
+
+.populated-1{
+    height: 100%;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.follow-link{
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+
+.spacing{
+    height: 60%;
+    width: 100%;
+}
+
+.contact-link{
+    width: 100%;
+    height:30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.yt{
+    width: 35%;
+}
+.nav-links-1{
+    display: flex;
+    list-style: none; 
+    width: 60vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+}
+.nav-links-1 li a:hover {
+    color: #61DAFB;
+}
+
+.nav-links-1 li a{
+    text-decoration: none;
+    font-size: small;
+    color: white;
+    margin: 0 0.7vw;
+}
+/* .logo-1{
+    width: 40%;
+} */
+

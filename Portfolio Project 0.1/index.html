@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Lepakshi Husna</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Lepakshi Husna</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="/img/h1.png" alt="profile picture" style="border-radius: 50%; border-style: solid;" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Lepakshi Husna</h1>
+        <p class="section__text__p2">Crafting Dreams into Reality</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="/img/h2.png"
+            alt="Profile picture"
+            class="about-pic" style="border-radius: 50%; border-style: solid;"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <i class="fa-solid fa-building-columns" style="color: #000000;"></i>
+              <h3>Education</h3>
+              <p>B.Sc. Electronics (MBUT)<br />Persuing M.Sc. in Computer Applications (MUJ)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Greetings! I'm Husna, an ordinary girl fueled by extraordinary dreams and a firm belief in the beauty of simplicity. Currently immersed in the dynamic world of Computer Applications at Manipal University, Jaipur, I embarked on this journey after successfully earning my stripes in BSC Electronics from the prestigious Mohan Babu University, Tirupati.</p><p> academic voyage commenced at Gnanambica College in Annamaya District, setting the stage for excellence. At Vijaya Bharathi High School, I left an indelible mark with an impressive 80% CGPA in SSC.</p><p>Beyond the academic realm, I am a multifaceted individual. From the rhythmic beats of dance to capturing fleeting moments through the lens of my camera, and the artistry of video editing, my interests are diverse. I find solace and adventure in the world of books and the thrill of exploring new places.</p><p>I don't just pursue a Master's; I am curating a vibrant tapestry of experiences and skills, shaping a unique narrative that defines me. Welcome to my world—where dreams meet reality, and simplicity is the canvas for extraordinary beauty. Explore my vibrant portfolio, and join me on this journey of growth and self-discovery.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">SKILLS</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>Communication Skills</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+               <div>
+                  <h3>Time Management</h3>
+                  <p>intermidiate</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Problem Solving</h3>
+                  <p>intermidiate</p>
+                </div>
+              </article>
+              <article><div>
+                  <h3>Collaboration</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article><div>
+                  <h3>Adaptability</h3>
+                  <p>intermidiate</p>
+                </div>
+              </article>
+              <article><div>
+                  <h3>Cloud Computing</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Experience</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>Cloud Computing</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Internship</h3>
+                  <p>At National Service Scheme (NSS)</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Internship</h3>
+                  <p>In Process Mining (EduSkillls)</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me .</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <p><a href="mailto:husna786hyd@gmail.com" target="_blank"><i class="fa-solid fa-at" style="color: #a23939; margin-right: 20px;"></i>Husna786hyd@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <p><a href="https://www.linkedin.com/in/lepakshi-husna-1ba07325b/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #4176d2;margin-right: 20px;"></i>LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div style=" display: flex; align-items: center; justify-content: center;"><a href="https://saksham-hkrm-portfolio.netlify.app/" target="_blank"><img src="/img/HKRM.2.png" alt="" style="width: 50px;"></a></div>
+      <p>Copyright &#169; Saksham HKRM . All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

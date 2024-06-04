@@ -1,0 +1,48 @@
+.project-counter {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden !important;
+    background: rgb(12, 164, 166);
+    background: linear-gradient(0deg, rgba(12, 164, 166, 1) 0%, rgba(255, 255, 255, 0) 47%);
+}
+
+#counter-img {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    z-index: -90;
+    overflow: hidden;
+    filter: blur(7px);
+}
+
+.project-counter>.h {
+    width: 80%;
+}
+
+.counter {
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.514);
+    border-width: 1px;
+    border-top-width: 3px ;
+    border-top-color: #0ca4a6;
+    border-radius: 30px;
+    column-gap: 10px;
+}
+
+.counter-1 , .counter-2{
+    height: 85%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.counter-1{
+    border-style: solid;
+    border-color: transparent;
+    border-right-color: rgba(240, 248, 255, 0.542);
+    
+}

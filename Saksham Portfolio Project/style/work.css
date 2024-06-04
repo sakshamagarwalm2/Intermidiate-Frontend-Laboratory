@@ -1,0 +1,14 @@
+.p1{
+    position:absolute;
+    display: none;
+}
+
+.slides>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides:hover .p1{
+    display: inline;
+}

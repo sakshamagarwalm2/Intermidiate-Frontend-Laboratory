@@ -1,0 +1,37 @@
+.circle-1>img {
+    width: 260px;
+    height: 200px;
+}
+
+.circle-1 {
+    width: 200px;
+    position: absolute;
+    right: 0rem; 
+    bottom: -0.5rem; 
+    mix-blend-mode: color-dodge;
+    z-index: 10; 
+    transition-duration: 75ms; 
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    overflow: hidden;
+}
+
+@media (min-width:1200px) {
+    .circle-1 {
+        width: 300px;
+        right: -4rem;
+    }
+}
+@media (max-width:657px){
+  .circle-1{
+    display: none;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+} 

@@ -1,0 +1,19 @@
+.topleftimage{
+   position: absolute;
+   left: 0;
+   top: 0;
+   mix-blend-mode: color-dodge;
+   z-index: -10;
+   max-width: 400;
+   opacity: 0.7;
+}
+.top-left{
+    width: 400;
+    height: 400;
+}
+
+@media (max-width:1200px){
+    .top-left{
+        width: 220px;
+    }
+}

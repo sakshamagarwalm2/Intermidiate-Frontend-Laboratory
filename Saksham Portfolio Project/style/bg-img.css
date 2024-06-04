@@ -1,0 +1,24 @@
+.bg-img{
+    width: 1200px;
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+
+}
+.bg-img-1{
+    background: none;
+}
+
+@media (min-width:1200px) {
+    .bg-img-1 {
+        background-image: url('/public/bg-explosion.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        mix-blend-mode: color-dodge;
+    }
+
+}

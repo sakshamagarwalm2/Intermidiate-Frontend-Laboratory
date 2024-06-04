@@ -1,0 +1,31 @@
+.avtar-img {
+    width: 737px;
+    height: 678px;
+    z-index: 40;
+}
+
+.avtar-0 {
+    position: absolute;
+    bottom: -7rem;
+}
+
+.avtar-2{
+    display: none;
+  }
+
+@media (min-width: 1200px) {
+    .avtar-0 {
+        right: 3%;
+    }
+    .avtar-2{
+        display: flex;
+        position: absolute;
+        bottom: -7rem;
+        left:-20rem;
+      }
+}
+@media (max-width: 1200px) {
+    .avtar-0{
+        display: none;
+    }
+}

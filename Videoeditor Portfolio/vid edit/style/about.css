@@ -1,0 +1,70 @@
+.about {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-team{
+    height: 85vh;
+    width: 100%;
+    margin: 10px;
+}
+
+.blue-colr {
+    width: 20%;
+    height: 30%;
+    z-index: -22;
+    position: absolute;
+    left: 0;
+    margin-top: 30%;
+    background: linear-gradient(87deg, rgba(12, 164, 166, 1) 0%, rgba(255, 255, 255, 0) 97%);
+}
+
+.about-1 {
+    height: 100%;
+    width: 100%;
+    column-gap: 3%;
+}
+
+.left-1 {
+    height: 90%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2.5%;
+}
+
+.right-1 {
+    height: 90%;
+    width: 45%;
+}
+
+.vid-a{
+    z-index: 10;
+    position: absolute;
+    left: 45%;
+    margin-top: 10%;
+    width: 35%;
+    height: 46%;
+    background-color: rgba(240, 248, 255, 0.549);
+    border-radius: 30px;
+}
+
+.vid-a>iframe{
+    width: 95%;
+    border-radius: 30px;
+}
+
+.cam-a{
+    z-index: -5;
+    height: 100%;
+}
+.cam-a>img{
+    height: 100%;
+    float: right;
+    border-radius: 30px;
+}

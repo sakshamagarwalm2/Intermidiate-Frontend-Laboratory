@@ -1,0 +1,87 @@
+.contact {
+    height: 100%;
+}
+
+.contact-1 {
+    display: flex;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.contact-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0%;
+    gap: 1.5rem;
+    width: 100%;
+
+}
+
+.form-1 {
+    display: flex;
+    width: 100%;
+    column-gap: 1.5rem;
+}
+
+.input {
+    padding-left: 1.5rem;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.344);
+    outline-style: none;
+    width: 95%;
+    background-color: transparent;
+    height: 52px;
+}
+
+.textarea {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    outline-style: none;
+    width: 91%;
+    text-transform: capitalize;
+    background-color: transparent;
+    resize: none;
+    height: 100px;
+    border-color: rgba(255, 255, 255, 0.344);
+}
+
+.btn-con{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: larger;
+    font-weight: 900;
+}
+
+@media (min-width: 1200px) {
+    .contact-1 {
+        text-align: left;
+    }
+}
+
+@media (max-width:900px){
+    form{
+        width: 90% !important;
+    }
+}

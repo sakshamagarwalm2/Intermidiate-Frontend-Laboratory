@@ -1,0 +1,15 @@
+.Bulb>img {
+    width: 230px;
+    height: 260px;
+}
+
+.Bulb {
+    position: absolute;
+    bottom: -2.8rem;
+    left: -8.7rem;
+    --transform-rotate: 15deg;
+    mix-blend-mode: color-dodge;
+    z-index: 10; 
+    transition-duration: 75ms; 
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

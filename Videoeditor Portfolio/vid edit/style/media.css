@@ -1,0 +1,249 @@
+/*Stying for small screens*/
+@media screen and (max-width: 950px) {
+    nav {
+        background-color: black;
+        position: fixed;
+        z-index: 3;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.7);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.7s;
+    }
+
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .nav-links li:nth-child(6) {
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+
+    .nav-links li:nth-child(7) {
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+
+    .populated {
+        height: 30vh !important;
+    }
+
+    .follow-link,
+    .spacing {
+        display: none;
+    }
+
+    .contact-link {
+        flex-direction: column;
+    }
+
+    .top-vid-1 {
+        display: none !important;
+    }
+
+    .top-vid-2 {
+        display: block !important;
+    }
+
+    .h>h2 {
+        font-size: medium !important;
+    }
+
+    .clint {
+        height: 50vh !important;
+    }
+
+    .counter {
+        width: 100% !important;
+        height: 30% !important;
+    }
+
+    h3 {
+        font-size: small !important;
+    }
+
+    .counter-c {
+        font-size: 20px !important;
+    }
+
+    .cp {
+        font-size: 20px !important;
+    }
+
+    .about {
+        height: 130vh !important;
+        flex-direction: column !important;
+    }
+
+    .about-1 {
+        flex-direction: column !important;
+    }
+
+    .left-1 {
+        margin-top: 30px;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .right-1 {
+        margin-top: 90px;
+        width: 100% !important;
+    }
+
+    .vid-a {
+        width: 80% !important;
+        left: 5% !important;
+        height: 30vh !important;
+    }
+
+    .vid-a>iframe {
+        width: 90% !important;
+        height: 90% !important;
+    }
+
+    .cam-a {
+        width: 100% !important;
+    }
+
+    .cam-a>img {
+        width: 100% !important;
+        height: 40vh !important;
+    }
+
+    .h22 {
+        font-size: 20px !important;
+        text-align: center !important;
+        margin-top: 20px;
+    }
+
+    .service {
+        height: 180vh !important;
+    }
+
+    .h2s {
+        font-size: large !important;
+    }
+
+    .ps {
+        font-size: small !important;
+    }
+
+    .card {
+        display: none;
+    }
+
+    .yt{
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+}
+
+
+@media screen and (max-width: 570px) {
+    .book {
+        width: 77% !important;
+        height: auto !important;
+        display: block;
+        padding-left: 3rem;
+    }
+
+    .book-1 {
+        text-align: start !important;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .wrapper-w .carousel-w {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+
+    .wrapper-w {
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper-w .carousel-w {
+        grid-auto-columns: 100%;
+    }
+}
+
+
+@media (max-width: 940px) {
+    .grid-container {
+        grid-template-areas:
+            'one one two five five'
+            'three three three five five'
+            'four four four four four'
+    }
+}
+
+@media (max-width: 640px) {
+    .grid-container {
+        grid-template-areas:
+            'one one two two two'
+            'three three three five five'
+            'four four four four four'
+    }
+}
+
+@media (max-width: 460px) {
+    .grid-container {
+        grid-template-areas:
+            'one'
+            'two'
+            'three'
+            'four'
+            'five';
+    }
+}

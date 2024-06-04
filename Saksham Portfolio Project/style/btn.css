@@ -1,0 +1,68 @@
+.btn, .btn--2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.btn-1 {
+    margin: auto;
+}
+
+.btn-img {
+    max-width: 141px;
+    max-height: 148px;
+    animation: spin 8s linear infinite;
+}
+
+.project-btn {
+    position: relative;
+    width: 185px;
+    height: 185px;
+    font-size: 1.75rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/public/circle-star.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-btn>i {
+    position: absolute;
+}
+
+.btn:hover .project-btn>i , .btn--2:hover .project-btn>i {
+    transition-property: all;
+    transition-duration: 500ms;
+    transform: translate(15px);
+    color: #f13024;
+}
+
+@media (min-width:1200px) {
+    .btn {
+        display: none;
+    }
+
+    .btn-1 {
+        margin: 0;
+    }
+}
+
+@media (max-width:1200px) {
+    .btn--2{
+        display: none;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
